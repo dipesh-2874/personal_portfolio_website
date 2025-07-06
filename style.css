@@ -154,16 +154,15 @@ span{
 .social-media.text h6{
     margin: 0 2rem 2rem 1rem;
     font-size: 1rem;
-    color: var(--main-color);
-    transform: translateY(-15px);
-    opacity: 0;
+    color: var(--text-color);
+    transform: translateY(-10px);
     cursor: default;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .social-media.text h6:hover{
-    transform: translateY(-3px);
-    opacity: 100;
+    color: var(--main-color);
+    text-shadow: 1px 1px 3px var(--main-color);
 }
 
 .social-media a:hover,

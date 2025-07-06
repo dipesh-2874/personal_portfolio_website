@@ -180,6 +180,11 @@ span{
     box-shadow: none;
 }
 
+.git-btn.copy{
+    transform: translate3d(-10px, -5px, 0);
+    color: #19191a;
+}
+
 .about{
     display: flex;
     justify-content: center;

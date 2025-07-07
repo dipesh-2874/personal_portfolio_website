@@ -621,8 +621,9 @@ form button:hover{
     margin-top: 3rem;
   }
 
-  .social-media.text .p{
-    margin-left: 10rem;
+  .social-media.text .p,
+  .social-media.text .a{
+    transform: translateX(10rem);
   }
 
   .projects-container {

@@ -584,8 +584,25 @@ form button:hover{
     padding: 2rem 5%;
   }
 
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 100%;
+    background: var(--bg-color);
+    display: none;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
   .navbar a {
-    margin-left: 2rem;
+    margin: 2rem 0;
+    font-size: 2rem;
   }
 
   .home {

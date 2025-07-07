@@ -93,7 +93,16 @@ form.addEventListener("submit", (e) => {
 
 const menuIcon = document.querySelector('#menu-icon');
 const navbar = document.querySelector('.navbar');
+const navLinks = document.querySelectorAll('.nav-link')
 
 menuIcon.onclick = () => {
   navbar.classList.toggle('active');
 };
+
+navLinks.forEach(link =>{
+    link.addEventListener('click', () => {
+        navbar.classList.remove('active');
+        navLinks.forEach(l => l.classList.remove('active'));
+        link.classList.add('active');
+    });
+});

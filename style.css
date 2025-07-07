@@ -69,7 +69,7 @@ section{
 
 #menu-icon{
     font-size: 3.6rem;
-    color: var(--text-color);
+    cursor: pointer;
     display: none;
 }
 
@@ -468,7 +468,7 @@ span{
 }
 
 .forcontact{
-    width: 1200px;
+    width: 90%;
     display: grid;
     grid-gap: 75px;
     padding-left: 50px;
@@ -570,7 +570,7 @@ form button:hover{
     display: block;
 }
 
-/* FOR MOBILE VIEW */
+/* FOR MOBILE */
 @media (max-width: 768px) {
   html {
     font-size: 50%;
@@ -584,25 +584,25 @@ form button:hover{
     padding: 2rem 5%;
   }
 
-  #menu-icon{
-    font-size: 3.6rem;
-    color: var(--text-color);
+  #menu-icon {
+    display: block;
   }
-  
+
   .navbar {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
     width: 100%;
     background: var(--bg-color);
-    display: none;
+    display: flex;
+    color: var(--main-color);
     flex-direction: column;
     text-align: center;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3 ease-in-out;
   }
 
   .navbar.active {
-    display: flex;
+    right: 0;
   }
 
   .navbar a {

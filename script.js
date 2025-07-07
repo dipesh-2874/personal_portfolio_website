@@ -88,3 +88,12 @@ form.addEventListener("submit", (e) => {
         return false;
     }
 });
+
+//for mobile navbar
+
+const menuIcon = document.querySelector('#menu-icon');
+const navbar = document.querySelector('.navbar');
+
+menuIcon.onclick = () => {
+  navbar.classList.toggle('active');
+};

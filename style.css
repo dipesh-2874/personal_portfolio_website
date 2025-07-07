@@ -584,6 +584,11 @@ form button:hover{
     padding: 2rem 5%;
   }
 
+  #menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+  }
+  
   .navbar {
     position: absolute;
     top: 100%;

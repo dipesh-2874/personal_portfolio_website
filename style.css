@@ -621,6 +621,10 @@ form button:hover{
     margin-top: 3rem;
   }
 
+  .social-media.text .p{
+    margin-left: 10rem;
+  }
+
   .projects-container {
     grid-template-columns: 1fr;
   }

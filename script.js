@@ -5,6 +5,12 @@ const phone = document.getElementById("phone");
 const subject = document.getElementById("subject");
 const message = document.getElementById("message");
 
+var loader = document.getElementById("loader");
+
+window.addEventListener("load", function(){
+    loader.style.display = "none";
+});
+
 function sendEmail(){
     const bodyMessage = `Full Name: ${fullName.value}<br>Email: ${email.value}<br>Phone Number: ${phone.value}<br>Message: ${message.value}`
 

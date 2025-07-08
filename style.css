@@ -19,6 +19,59 @@
     --shadow-color-2: #5c626e;
 }
 
+#loader{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    z-index: 1000;
+}
+
+#loader .box{
+    position: absolute;
+    width: 7rem;
+    height: 7rem;
+    top: 48%;
+    left: 48%;
+    margin: -3.1rem 0 0 -3.1rem;
+    border-top: 3px solid #32afa9;
+    border-radius: 50%;
+    animation: rotate 2s infinite linear;
+}
+
+#loader .box::before{
+    content: "";
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border-top: 3px solid #f17362;
+    border-radius: 50%;
+    animation: rotate 2s infinite linear;
+}
+
+#loader .box::after{
+    content: "";
+    position: absolute;
+    left: 12px;
+    right: 12px;
+    top: 12px;
+    bottom: 12px;
+    border-top: 3px solid #7e0cf5;
+    border-radius: 50%;
+    animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 html{
     font-size: 62.5%;
     overflow-x: hidden;
@@ -616,11 +669,6 @@ form button:hover{
   .about-img {
     width: 80vw;
     margin-top: 3rem;
-  }
-
-  .social-media.text .p,
-  .social-media.text .a{
-    transform: translateX(10rem);
   }
 
   .projects-container {
